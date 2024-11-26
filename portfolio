@@ -1,0 +1,632 @@
+import React, { useState } from "react";
+import { Button, Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Instagram, LinkedIn } from "@mui/icons-material"; 
+
+function Portfol() {
+  const [details, setDetails] = useState("");
+
+  return (
+    <>
+  <div className="body" style={{backgroundColor:'black', minHeight:'100vh'}}>
+      <nav className="nav-bar">
+        <ul className="nav justify-content-center">
+          <li className="nav-item">
+            <Link to="/" className="navlink">
+            ℌ𝔬𝔪𝔢
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/casestudies" className="navlink">
+            𝙲𝚊𝚜𝚎𝚂𝚝𝚞𝚍𝚒𝚎𝚜
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/textimonial" className="navlink">
+            𝚃𝚎𝚡𝚝𝚒𝚖𝚘𝚗𝚊𝚒𝚕
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/projects" className="navlink">
+            𝚁𝚎𝚌𝚎𝚗𝚝 𝚆𝚘𝚛𝚔𝚜
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="https://www.linkedin.com/in/sumin-raj-d-8592a62a0/" className="navlink">
+            𝙶𝚎𝚝 𝙸𝚗 𝚃𝚘𝚞𝚌𝚑
+            </Link>
+          </li>
+          <li className="item">
+            <Link to="https://www.instagram.com/haurn_vein/profilecard/?igsh=b3RlaWFjMWtydWN1">
+            <img src="\instagram.png"  className="logo logset"/>
+            </Link>
+          </li>
+          <li className="item">
+            <Link to="https://www.linkedin.com/in/sumin-raj-d-8592a62a0/" >
+               <img src="https://cdn-icons-png.flaticon.com/128/2111/2111499.png" className="logo"></img>
+            </Link>
+          </li>
+          <li className="item">
+            <Link to="https://x.com/SuminRaj9061?t=VVkyoRtt2YSlDQkgYro9yg&s=08">
+               <img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" className="logo"></img>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+
+      {/* Portfolio Section */}
+      <Container className="mt-5">
+        <Row>
+          {/* Left Section */}
+          <Col md={6} className="left-section">
+            <h1 style={{color:'white'}}>𝓢𝓤𝓜𝓘𝓝 𝓡𝓐𝓙 𝓓</h1>
+            <p style={{color:'white'}}> 𝙰 𝙼𝙴𝚁𝙽 𝙵𝚞𝚕𝚕-𝚂𝚝𝚊𝚌𝚔 𝚆𝚎𝚋 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛 𝙸𝚗𝚝𝚎𝚛𝚗 𝚠𝚒𝚝𝚑 𝚊 𝚙𝚊𝚜𝚜𝚒𝚘𝚗 𝚏𝚘𝚛 𝚋𝚞𝚒𝚕𝚍𝚒𝚗𝚐 𝚎𝚏𝚏𝚒𝚌𝚒𝚎𝚗𝚝, 𝚜𝚌𝚊𝚕𝚊𝚋𝚕𝚎, 𝚊𝚗𝚍 𝚞𝚜𝚎𝚛-𝚏𝚛𝚒𝚎𝚗𝚍𝚕𝚢 𝚠𝚎𝚋 𝚊𝚙𝚙𝚕𝚒𝚌𝚊𝚝𝚒𝚘𝚗𝚜. 𝙸 𝚎𝚗𝚓𝚘𝚢 𝚠𝚘𝚛𝚔𝚒𝚗𝚐 𝚊𝚌𝚛𝚘𝚜𝚜 𝚝𝚑𝚎 𝚏𝚞𝚕𝚕 𝚜𝚝𝚊𝚌𝚔, 𝚏𝚛𝚘𝚖 𝚌𝚛𝚊𝚏𝚝𝚒𝚗𝚐 𝚍𝚢𝚗𝚊𝚖𝚒𝚌 𝚏𝚛𝚘𝚗𝚝-𝚎𝚗𝚍 𝚎𝚡𝚙𝚎𝚛𝚒𝚎𝚗𝚌𝚎𝚜 𝚝𝚘 𝚍𝚎𝚟𝚎𝚕𝚘𝚙𝚒𝚗𝚐 𝚛𝚘𝚋𝚞𝚜𝚝 𝚋𝚊𝚌𝚔-𝚎𝚗𝚍 𝚜𝚎𝚛𝚟𝚒𝚌𝚎𝚜.
+            </p>
+            <button className="button">
+              <Link to="/profile">
+                GET TO KNOW ME
+              </Link>
+            </button>
+          </Col>
+
+          {/* Right Section */}
+          <Col md={6} className="right-section text-center">
+            <img
+              src="\WhatsApp Image 2024-06-22 at 14.17.46_bb686a36.jpg"
+              alt="Portfolio"
+              style={{width:'300px', height:'auto', marginTop:'30px', borderRadius:'150px'}}
+              className="img-fluid"
+            />
+          </Col>
+        </Row>
+      </Container>
+     
+    <h4 style={{position:'absolute', padding:'50px', fontSize:'14px', color:'grey'}}>Worked with</h4>
+     <section style={{ padding: '100px', display: 'flex', justifyContent: 'space-around', position:'absolute' }}>
+          <div style={{ display: 'flex', gap: '27px', alignItems: 'center', }}>
+          <img src="https://th.bing.com/th/id/OIP.abznQzXMmlCbu0KrsDnCygAAAA?w=313&h=176&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Airtm" style={{ width: '100px', height: 'auto' }} />
+          <img src="https://th.bing.com/th/id/OIP.kXHxR4eA2WEEuWG1OeVUZwHaDt?w=322&h=174&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Company 2" style={{ width: '100px', height: 'auto' }} />
+          <img src="https://unizone-emotorsport.com/wp-content/uploads/2023/05/unizone_ogp.png" alt="Company 3" style={{ width: '100px', height: 'auto' }} />
+        </div>
+    </section>
+</div>
+    </>
+  );
+}
+
+export default Portfol;
+
+
+
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./profile.css";
+import {about,service, work} from "./details";
+
+import { Col, Container, Row ,Button,Card} from "react-bootstrap";
+import { Email, Home, Http, Instagram, LinkedIn, LocationOn, Phone, SmartDisplay, Twitter } from "@mui/icons-material";
+import { FaSnapchat,FaEnvelope,FaInstagram,FaTwitter,FaLinkedin, FaTelegram} from "react-icons/fa";
+
+function Profile () {
+    const [formData, SetFormData] = useState({
+      firstname: "",
+      lastname: "",
+      mail: "",
+      message: "",
+    
+    });
+
+    const handleChange=(e)=>{
+      const {name,value}=e.target;
+      SetFormData({...FormData,[name]:value,});
+    };
+
+    const handleSubmit=(e)=>{
+      e.preventDefault();   
+      console.log('Form submitted:', formData);  // we can put alertbox in here to , The preventdefault() is set for the form termintion only
+    };
+
+    const onSubmit=()=>{
+       alert(`​🇹​​🇭​​🇦​​🇳​​🇰​​🇸​ ​🇫​​🇴​​🇷​ ​🇹​​🇭​​🇪​ ​🇫​​🇪​​🇪​​🇩​​🇧​​🇦​​🇨​​🇰​❗ ​🇼​​🇪​❜​🇷​​🇪​ ​🇨​​🇴​​🇲​​🇵​​🇮​​🇱​​🇮​​🇳​​🇬​ ​🇾​​🇴​​🇺​​🇷​ ​🇸​​🇺​​🇬​​🇬​​🇪​​🇸​​🇹​​🇮​​🇴​​🇳​​🇸​. ${formData.firstname}!`)
+    };
+
+   
+    return(
+        <>
+        <div style={{backgroundColor:'black'}}>
+        {/* about */}
+        <div style={{padding:'20px'}}>
+             <Container  style={{backgroundColor:'#3c3e3f', borderRadius:'50px'}}>
+                  <Row>
+                      <Col md={5} className="left-section profile-image">
+                       <img src="\WhatsApp Image 2024-06-22 at 14.17.46_bb686a36.jpg" alt='profile' className="img-fluid" style={{borderRadius:'150px', width:"350px", height:'auto'}}></img>
+                      </Col>
+
+                      <Col md={6} className="right-section profile-details">
+                      <h4 style={{color:'white'}}>About me</h4>
+                          <p className="about-description"  style={{color:'white'}}>{about.item}</p>
+
+                           {/* Skills Section */}
+            <Row className="skills-section">
+            <Col className="skill-badge">HTML5</Col>
+            <Col className="skill-badge">CSS3</Col>
+            <Col className="skill-badge">JavaScript</Col>
+            <Col className="skill-badge">Bootstrap</Col>
+            <Col className="skill-badge">Next.js</Col>
+          </Row>
+
+          <Link to={"https://flowcv.me/sumin-devarajan"}><Button variant="danger" className="mt-4">
+            Download CV
+          </Button></Link>
+        </Col>
+    </Row>
+    </Container>
+    </div>
+
+      <Container>
+        <p style={{position:'absolute',color:'white'}}>▶my service</p>
+        <div style={{padding:'17px'}}>
+          <h2 style={{position:'absolute', color:'white'}}>What Can I Do</h2>
+          </div>
+      </Container>
+
+      <Container className="my-5">
+           <Row>
+            {service.map((service,index)=>(
+                <Col md={4} className="mb-4" key={index}>
+                        <Card className="service-card text-center p-3">
+                        <div className="service-icon mb-3">{service.icon}</div>
+                        <Card.Title style={{color:"white"}}>{service.title}</Card.Title>
+                        <Card.Text style={{color:"white"}}>{service.description}</Card.Text>
+                       </Card>
+                </Col>
+                ))}
+            </Row>
+      </Container>
+      
+
+ {/* resume */}
+      <Container>
+<div className="code-resume-container">
+  <div className="left-section">
+    <h1 className="resume" style={{ color: 'white', borderRadius: '10px'}}>𝚁𝚎𝚜𝚞𝚖𝚎</h1>
+    <div className="profile-section">
+      <img src="\WhatsApp Image 2024-06-22 at 14.17.46_bb686a36.jpg" alt="Profile" className="profile-pic" />
+    </div>
+    <div className="profile-info">
+      <span className="code-comment">// Profile Information</span>
+      <div className="code-line">
+        <span className="code-key">const</span> <span className="code-variable">profile</span> = {'{'}
+      </div>
+      <div className="code-line code-indent">
+        <span className="code-key">name</span>: <span className="code-string">'Richard Sanchez'</span>,
+      </div>
+      <div className="code-line code-indent">
+        <span className="code-key">title</span>: <span className="code-string">'Product Designer'</span>,
+      </div>
+      <div className="code-line code-indent">
+        <span className="code-key">location</span>: <span className="code-string">'Sydney, Australia'</span>,
+      </div>
+      <div className="code-line">{'};'}</div>
+
+      <span className="code-comment">//Language</span>
+      <div className="code-line">
+        <span className="code-key">const</span> <span className="code-variable">Lang</span> = {'{'}
+      </div>
+      <div className="code-line code-indent">
+        <span className="code-key">malayalam</span>: <span className="code-string">'native'</span>,
+      </div>
+      <div className="code-line code-indent">
+        <span className="code-key">english</span>: <span className="code-string">'Proficient'</span>,
+      </div>
+      <div className="code-line code-indent">
+        <span className="code-key">hindi</span>: <span className="code-string">'moderate'</span>,
+      </div>
+      <div className="code-line">{'};'}</div>
+    </div>
+  </div>
+         
+  <div className="right-section">
+          <span className="code-comment">// Contact Information</span>
+          <div className="code-line">
+            <span className="code-key">const</span> <span className="code-variable">contactInfo</span> = {'{'}
+          </div>
+          <div className="code-line code-indent">
+            <span className="code-key"><Phone></Phone>phone</span>: <span className="code-string">'+91 9061433640'</span>,
+          </div>
+          <div className="code-line code-indent">
+            <span className="code-key"><Email></Email>email</span>: <span className="code-string">'suminrajd.connect@gmail.com'</span>,
+          </div>
+          <div className="code-line code-indent">
+            <span className="code-key"><LocationOn></LocationOn>address</span>: <span className="code-string">'S.S Bhavan TRA 223 Alamcode(p.0),Attingal,T.V.M'</span>,
+          </div>
+          <div className="code-line">{'};'}</div>
+
+          <span className="code-comment">// Education</span>
+          <div className="code-line">
+            <span className="code-key">const</span> <span className="code-variable">education</span> = {'['}
+          </div>
+          <div className="code-line code-indent">
+            {'{'} <span className="code-key">degree</span>: <span className="code-string">'B.C.A'</span>, <span className="code-key">location</span>: <span className="code-string">'Kerala University'</span>, <span className="code-key">year</span>: <span className="code-string">'2021-2024'</span> {'},'}
+          </div>
+          <div className="code-line code-indent">
+            {'{'} <span className="code-key">Intern</span>: <span className="code-string">'Web Developer.'</span>, <span className="code-key">location</span>: <span className="code-string">'Softzane Solution, Kollam'</span>, <span className="code-key">month</span>: <span className="code-string">'jun-dec'</span> {'},'}
+          </div>
+          <div className="code-line">{'];'}</div>
+
+          <span className="code-comment">// Experience</span>
+          <div className="code-line">
+            <span className="code-key">const</span> <span className="code-variable">experience</span> = {'['}
+          </div>
+          <div className="code-line code-indent">
+            {'{'} <span className="code-key">company</span>: <span className="code-string">'Softzane Solution'</span>, <span className="code-key">location</span>: <span className="code-string">'Kollam, Kerala'</span>, <span className="code-key">month</span>: <span className="code-string">'jun-dec'</span> {'},'}
+          </div>
+         
+          <div className="code-line">{'];'}</div>
+
+          <span className="code-comment">// Skills</span>
+          <div className="code-line">
+            <span className="code-key">const</span> <span className="code-variable">skills</span> = {'{'}
+          </div>
+          <div className="code-line code-indent">
+            <span className="code-key">React.js</span>: <span className="code-number">62</span>,
+          </div>
+          <div className="code-line code-indent">
+            <span className="code-key">Express.js</span>: <span className="code-number">75</span>,
+          </div>
+          <div className="code-line code-indent">
+            <span className="code-key">Node.js</span>: <span className="code-number">78</span>,
+          </div>
+          <div className="code-line code-indent">
+            <span className="code-key">HTML5, CSS3, Tailwid, boostrap</span>: <span className="code-number">81</span>,
+          </div>
+          <div className="code-line code-indent">
+            <span className="code-key">MongoDB, MySQL</span>: <span className="code-number">72</span>,
+          </div>
+            
+          <div className="code-line">{'};'}</div>
+            <div>
+            <span className="code-key">GitHub<img src="https://cdn.iconscout.com/icon/free/png-256/free-github-logo-icon-download-in-svg-png-gif-file-formats--social-media-square-black-pack-logos-icons-437906.png" style={{width:'33px', height:'auto',borderRadius:'50px'}} alt="github"/></span>: <span className="code-number"><Link to="/">Get into the github </Link></span>,
+          </div>
+          <div className="my-4 social-icons-container"><Instagram></Instagram><LinkedIn></LinkedIn><Twitter></Twitter><FaSnapchat></FaSnapchat></div>
+        </div>
+    </div>
+    </Container>
+      
+      {/* card style */}
+      <Container>
+            <div className="container-card">
+              <div className="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqVUnM-QqMQPiLRw8TyVTDp-KQbq08ji43VA&s" alt="React" />
+                
+                <h3>React</h3>
+              </div>
+              <div className="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRgfZ2sG6xWL_Ag0kASTIytHshA2F419syVg&s" alt="Node.js" />
+                <h3>Node.js</h3>
+              </div>
+              <div className="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP2k717qBb6-pXKkCbG-NCUXC0Ntbm0hTVyg&s" alt="MongoDB" />
+                <h3>MongoDB</h3>
+              </div>
+              <div className="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQekWelnQLyNrIhnqKRm27jhiK_KGRxBwhKdQ&s" alt="Express.js" />
+                <h3>Express.js</h3>
+              </div>
+              <div className="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT76htUv99PcmoXOAmy8jZYI5OgRGy2RzEKqQ&s" alt="html.js" />
+                <h3>HTML5</h3>
+              </div>
+              <div className="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCXH35MxByZ8ijXJl6psG_g5ZoGo-e-DMkUg&s" alt="css" />
+                <h3>CSS3</h3>
+              </div>
+            </div>
+      </Container>
+
+   {/* Login form */}
+<Container>
+       <div className="contact-form-container">
+       <h1 >​🇮​❜​🇩​ ​🇱​​🇴​​🇻​​🇪​ ​🇹​​🇴​ ​🇭​​🇪​​🇦​​🇷​ ​🇫​​🇷​​🇴​​🇲​ ​🇾​​🇴​​🇺​❗</h1> 
+         <form onSubmit={handleSubmit}>
+               <input type="text" name="firstName" placeholder="FirstName" value={formData.firstname} onChange={handleChange} required/>
+               <input type="text" name="lastname" placeholder="LastName" value={formData.lastname} onChange={handleChange} required/>
+               <input type="email" name="email"placeholder="Mail"value={formData.mail} onChange={handleChange} required/>
+               <textarea name="message" placeholder="Message..."value={formData.message} onChange={handleChange} required/>
+               <button className="button-submit" type="submit" onClick={onSubmit}>Submit</button>
+          </form>  
+       
+    
+       </div>
+</Container>
+
+<div style={{padding:'10px'}}>
+  <img src="\webmodelpage3.webp" style={{width:'350px', height:'170px'}}></img>
+  <img src="\webpagemodel1.png" style={{width:'350px', height:'170px'}}></img>
+  <img src="\webpagemodel2.png" style={{width:'350px', height:'170px'}}></img>
+  {/* <img src="\webpagemodel1.png" alt="webmodel" style={{width:'1200px', height:'auto', padding:'17px', overflow:'hidden', position:'relative'}}></img> */}
+</div>
+
+     <Container style={{padding:'30px'}}>
+           <Row>
+            {work.map((work,index)=>(
+               <Col md={6} key={index} >
+               <h1 style={{fontWeight:'600', color:'white'}}>{work.item}</h1>
+               <p style={{fontWeight:'400', color:'white'}}>{work.describe}</p>
+               </Col>
+             ))}
+               <Col md={6}>
+               <Button  variant="danger" className="mt-5">Connect</Button>
+               </Col>
+             </Row>
+      </Container>
+
+      <Container>
+        {/* <Row>
+          {images.map((image,index)=>(
+             <Col md={4} className="mb-4" key={index}>
+               <div className="card mb-3" style={{color:'white'}}>{image.image1},{image.title}</div>
+             </Col>
+          ))}
+          </Row> */}
+      </Container>
+  
+      {/* footer */}
+      <Container>
+      <footer className="footer">
+      <div className="container">
+        <h2 className="footer-title">Get in Touch</h2>
+        <p className="footer-description">
+          Ecosystem bootstrapping learning curve lean startup disruptive. Marketing long tail disruptive agile development partner.
+        </p>
+        <div className="social-icons">
+          <a href="https://www.instagram.com/haurn_vein/profilecard/?igsh=b3RlaWFjMWtydWN1" target="_blank" rel="noopener noreferrer">
+           <div> <FaInstagram /></div>
+          </a>
+          <a href="https://www.linkedin.com/in/sumin-raj-d-8592a62a0/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="https://x.com/SuminRaj9061?t=VVkyoRtt2YSlDQkgYro9yg&s=08" target="_blank" rel="noopener noreferrer">
+            <FaTwitter />
+          </a>
+        </div>
+        <div className="contact-info">
+          <div className="contact-item">
+            <FaTelegram />
+            <a href="http://t.me/Sumin_Devarajan" target="_blank" rel="noopener noreferrer">telegram.com/example</a>
+          </div>
+          <div className="contact-item">
+            <FaEnvelope />
+            <a href="mailto:contact@example.com">rdalex9061@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+      </Container>
+      </div>   
+        </>
+    );
+
+};
+export default Profile;
+
+
+import React from "react";
+import StatCard from "./statecard";
+import CodingSessionsChart from "./codingchart";
+import MonthlyContributionsChart from "./monthlycontribution";
+import DetailsTable from "./tablecontent";
+import './portfolio.css';
+
+const Dashboard = () => (
+    <div className="dashboard">
+      <div className="overview">
+        <StatCard title="Projects Completed" value="15" change="25" positive />
+        <StatCard title="Repositories Pushed" value="8" change="-10" />
+        <StatCard title="Issues Resolved" value="50" change="15" positive />
+        <StatCard title="Code Reviews" value="30" change="5" positive />
+      </div>
+      <div className="charts">
+        <div className="chart">
+          <h2>Coding Hours Over Time</h2>
+          <CodingSessionsChart />
+        </div>
+        <div className="chart">
+          <h2>Monthly GitHub Contributions</h2>
+          <MonthlyContributionsChart />
+        </div>
+      </div>
+      <div className="details">
+        <DetailsTable/>
+      </div>
+    </div>
+  );
+  
+  export default Dashboard;
+
+import React from 'react';
+import './portfolio.css';
+import { Col, Container,Row} from 'react-bootstrap';
+import { project,shopify,expenseTracker,banners} from './details';
+
+const BannerRow = () => {
+  return (
+    <>
+    <div style={{backgroundColor:'#333',marginTop:'-50px'}}>
+
+<div className="portfolio-heading">
+  <h1>My Work Portfolio</h1>
+  <p>Explore the projects I’ve contributed to, showcasing my skills, creativity, and technical expertise.</p>
+  <hr className="divider" />
+</div>
+
+   <div>
+<h2 className='hosp'>HOSPITAL MANAGEMENT</h2>
+<div className="project-container">
+      {/* Left Section: Video */}
+      <div className="video-section">
+        <video
+          src={project.videoSrc}
+          controls
+          style={{ width: '70%', borderRadius: '8px' }}
+        >
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      {/* Right Section: Details */}
+      
+      <div className="details-section">
+  <h2>{project.title}</h2>
+  <p>{project.description}</p>
+  <h4>Technologies Used:</h4>
+  <div className="technologies">
+    {project.technologies.map((tech, index) => (
+      <div key={index} className="tech-item">
+        <img src={tech.icon} alt={tech.name} className="tech-icon" />
+        <span>{tech.name}</span>
+      </div>
+    ))}
+  </div>
+</div>
+</div>
+
+
+ <p style={{color:'whitesmoke'}}>"In the fast-paced world of healthcare, it's vital to manage hospital tasks effectively to ensure top-notch patient care. This article explores creating a strong Hospital Management App using the MERN stack – that's MongoDB, Express, React, and Node.js, breaking down the process for easier understanding."</p>
+    <div className="banner-row">
+      <div className="banner">
+        <div className="banner-inner">
+          <div className="banner-front">
+            {/* Front side content */}
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxHW6cOdYs3P3DFIS98P-TauGJ3RATHozukg&s" alt="Banner Front 1" />
+          </div>
+          <div className="banner-back">
+            {/* Back side content */}
+            <p className='paragraph'>It is the management that helps in managing the functioning of the hospital or a health unit. </p>
+          </div>
+        </div>
+      </div>
+      <div className="banner">
+        <div className="banner-inner">
+          <div className="banner-front">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkjRopphjGRvNqlNAJoSjdB4A2TAkRHtPTkw&s" alt="Banner Front 2" />
+          </div>                          
+          <div className="banner-back">
+            <p className='paragraph'>The emergency room is a hospital or primary care department that provides initial treatment to patients with a broad span of illnesses and injuries.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="banner">
+        <div className="banner-inner">
+          <div className="banner-front">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAU_iJH8yb_32-KywmospB8xGAaowIkdgAhg&s      " alt="Banner Front 3" />
+          </div>
+          <div className="banner-back">
+            <p className='paragraph'>Operational Management: A hospital administrator is responsible for the hospital's daily operations, which require efficient resource management, process optimisation, workflows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<hr className='horizontalline'/>
+
+    <div>
+        <h2 className="shopify-heading">SHOPIFY</h2>
+    </div>
+
+<div style={{color:'white'}}>
+<p style={{padding:'10px', justifyContent:'center', justifyItems:"center"}}>
+The online shopping platform developed using the MERN stack (MySQL, Express.js, React.js, and Node.js) is a robust, feature-rich application that provides a seamless shopping experience for users. Designed to be scalable and user-friendly, this platform bridges the gap between customers and sellers with advanced functionalities and modern design principles.
+</p>
+</div>
+
+
+<div className="project-container1">
+      {/* Left Section: Video */}
+      <div className="details-section1">
+  <h2>{shopify.title}</h2>
+  <p>{shopify.description}</p>
+  <h4>Technologies Used:</h4>
+  <div className="technologies">
+    {shopify.technologies.map((tech, index) => (
+      <div key={index} className="tech-item">
+        <img src={tech.icon} alt={tech.name} className="tech-icon" />
+        <span>{tech.name}</span>
+      </div>
+    ))}
+  </div>
+</div>
+
+      {/* Right Section: Details */ }
+      
+   <div className="video-section">
+        <video
+          src={shopify.videoSrc}
+          controls
+          style={{ width: '70%', borderRadius: '8px' }}
+        >
+          Your browser does not support the video tag.
+        </video>
+   </div>
+</div>
+
+<hr className='horizontalline'/>
+    <h2 className='expence'>Expence Traker</h2>
+
+
+ <div className="project-container1">
+      {/* Left Section: Video */}
+      <div className="video-section">
+        <video
+          src={expenseTracker.videoSrc}
+          controls
+          style={{ width: '70%', borderRadius: '8px' }}
+        >
+          Your browser does not support the video tag.
+        </video>
+   </div>
+    
+
+      {/* Right Section: Details */ }
+      
+          <div className="details-section2">
+      <h2 style={{color:'white'}}>{expenseTracker.title}</h2>
+      <p style={{color:'white'}}>{expenseTracker.description}</p>
+      <h4 style={{color:'white'}}>Technologies Used:</h4>
+      <div className="technologies">
+        {expenseTracker.technologies.map((tech, index) => (
+          <div key={index} className="tech-item">
+            <img src={tech.icon} alt={tech.name} className="tech-icon" />
+            <span>{tech.name}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    
+
+  </div>
+  <div className="banner-grid">
+      {banners.map((banner) => (
+        <div key={banner.id} className="banner-card">
+          <div className="card-inner">
+            <div className="card-front">
+              <img src={banner.imageSrc} alt={`Banner ${banner.id}`} />
+            </div>
+            <div className="card-back">
+              <p>{banner.text}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+</div>
+</>
+  );
+};
+
+export default BannerRow;
+
