@@ -1,0 +1,555 @@
+
+      /* Case studies */
+
+      .dashboard {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        background-color: #1a1a2e;
+        color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+      
+      .overview {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      
+      .stat-card {
+        background-color: #2a2a3b;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+      }
+      
+      .stat-card .title {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      
+      .stat-card .value {
+        font-size: 1.5rem;
+        margin-top: 10px;
+      }
+      
+      .stat-card .change {
+        font-size: 0.9rem;
+        color: #76c7c0; /* Green for positive changes */
+      }
+      
+      .stat-card .change.negative {
+        color: #ff6b6b; /* Red for negative changes */
+      }
+      
+      /* Charts Section */
+      .charts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      
+      .chart {
+        background-color: #2a2a3b;
+        padding: 20px;
+        border-radius: 10px;
+        color: #ffffff;
+        box-shadow: 0px 4px 10px rgba(177, 100, 17, 0.1);
+      }
+      
+      .chart h2 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        color: #f5f5f5;
+      }
+      
+      /* Details Section */
+      .details {
+        background-color: #2a2a3b;
+        padding: 20px;
+        border-radius: 10px;
+        color: #ffffff;
+      }
+      
+      /* Responsive Layout */
+      @media (max-width: 768px) {
+        .overview, .charts {
+          grid-template-columns: 1fr;
+        }
+      }
+
+     
+
+      /* TestimonialSection.css */
+/* AnimatedTestimonialSection.css */
+
+.animated-testimonial-section {
+  padding: 40px;
+  background-color: #1a1a2e;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.animated-testimonial-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #76c7c0;
+}
+
+.animated-testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.animated-testimonial-card {
+  background-color: #2a2a3b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animated-testimonial-card h3 {
+  font-size: 1.2rem;
+  color: #76c7c0;
+}
+
+.animated-testimonial-card p {
+  margin: 10px 0;
+}
+
+.animated-testimonial-card .author {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #bfbfbf;
+}
+
+/* Hover Effect */
+.animated-testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .animated-testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+ 
+
+
+.mern-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #121212; /* Dark background similar to the image */
+    padding: 2rem;
+    color: white;
+  }
+  
+  .mern-text h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 10px;
+  }
+  
+  .mern-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    margin-left: 30px;
+  }
+  
+  .mern-text .mern {
+    color: #00ff84; /* Custom green color for "MERN" */
+  }
+  
+  .mern-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .icon-box {
+    width: 80px;
+    height: 80px;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transform: rotate(45deg);
+    position: absolute;
+    margin-left: 100px;
+  }
+  
+  .icon-box img {
+    width: 40px;
+    height: 40px;
+    transform: rotate(-45deg); /* Counter-rotate the icon */
+    margin-left: -40px;
+    border-radius: 50px;
+  }
+  
+  .icon-box p {
+    color:  #333;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    transform: rotate(-45deg); /* Counter-rotate the text */
+  }
+  
+  /* Position each icon-box in a circular layout */
+  .icon-box:nth-child(1) {
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  
+  .icon-box:nth-child(2) {
+    top: 50%;
+    left: 76%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .icon-box:nth-child(3) {
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  
+  .icon-box:nth-child(4) {
+    top: 50%;
+    left: 23%;
+    
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+
+
+/* table content */
+.details-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .details-table th,
+  .details-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .details-table th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .details-table tr:hover {
+    background-color: #b6b0b0;
+  }
+  
+  .details-table .completed {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .details-table .active {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+
+
+
+/* 
+  recent works */
+
+  .portfolio-heading {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    position: relative;
+    color: #333;
+    background: linear-gradient(135deg, #125689, #0eba36);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .portfolio-heading h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-heading p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .divider {
+    width: 80px;
+    height: 4px;
+    background: #ffffff;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2px;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .project-container {
+    display: flex; /* Flexbox layout for side-by-side alignment */
+    gap: 10rem; /* Adds spacing between the video and the details */
+    align-items: flex-start; /* Aligns items at the top */
+    margin: 20px auto; /* Centers the container */
+    max-width: 1200px; /* Limits the maximum width for responsiveness */
+    padding: 20px;
+  }
+  
+  .video-section {
+    flex: 1; /* Takes up one part of the row */
+  }
+  
+  .details-section {
+    width: 100%; /* Reduced width to 70% of the container */
+    height: auto;
+    flex: 1;
+    background: linear-gradient(135deg, #125689, #0eba36);
+    padding: 15px; /* Adjusted padding for smaller content */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Animation for smooth entry */
+  }
+  
+  .details-section h2 {
+    margin-bottom: 10px; /* Reduced spacing */
+    color: #ffffff;
+    font-size: 1.5rem; /* Reduced font size */
+  }
+  
+  .details-section p {
+    margin-bottom: 15px; /* Reduced margin */
+    line-height: 1.4; /* Slightly tighter line spacing */
+    font-size: 0.9rem; /* Reduced font size */
+    color: #fbfbfb;
+  }
+  
+  .details-section h4 {
+    margin-bottom: 8px; /* Reduced margin */
+    font-size: 1rem; /* Slightly smaller font size */
+    color: #ffffff;
+  }
+  
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Reduced gap between items */
+  }
+  
+  .tech-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Reduced gap between icon and text */
+    background: #e3f2fd;
+    padding: 8px 10px; /* Smaller padding */
+    border-radius: 6px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .tech-item:hover {
+    transform: translateY(-3px); /* Reduced hover effect distance */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Subtler hover shadow */
+  }
+  
+  .tech-icon {
+    width: 24px; /* Smaller icon size */
+    height: 24px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px); /* Reduced initial translate */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+  .hosp{
+    font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(90deg, #0ec3ff, #1bff41); /* Gradient for the text */
+  -webkit-background-clip: text; /* Clips the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+  letter-spacing: 2px;
+  margin: 20px 0;
+  
+  padding: 10px;
+  }
+
+  /* Basic layout for the row */
+.banner-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.banner {
+  width: 250px;
+  height: 150px;
+  perspective: 1000px;
+}
+
+.banner-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.banner:hover .banner-inner {
+  transform: rotateY(180deg) scale(1.1); /* Adds flipping and zoom effect */
+}
+
+.banner-front,
+.banner-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner-front {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  
+}
+
+.banner-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 20%);
+  color: #fff;
+  transform: rotateY(180deg);
+}
+.paragraph{
+  font-size: small;
+  box-shadow: 5px 5px 15px rgb(85, 252, 59);
+}
+
+/* second project work */
+.shopify-heading {
+  font-size: 2rem; /* Slightly larger text */
+  font-weight: 700; /* Extra bold text */
+  text-align: center;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b); /* New gradient */
+  -webkit-background-clip: text; /* Clips the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+  letter-spacing: 3px; /* More spaced-out letters */
+  margin: 15px 0; /* Adjusted margin */
+  text-transform: capitalize; /* Capitalize each word */
+}
+
+
+.project-container1 {
+  display: flex; /* Flexbox layout for side-by-side alignment */
+  gap: 10rem; /* Adds spacing between the video and the details */
+  align-items: flex-start; /* Aligns items at the top */
+  margin: 20px auto; /* Centers the container */
+  max-width: 1200px; /* Limits the maximum width for responsiveness */
+  padding: 10px;
+}
+.details-section1 {
+  width: 100%; /* Reduced width to 70% of the container */
+  height: auto;
+  flex: 1;
+  background: linear-gradient(135deg, #d7a80d, #2389c4);
+  padding: 15px; /* Adjusted padding for smaller content */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;/* Animation for smooth entry */
+}
+
+.horizontalline {
+  border: none;
+  height: 5px;
+  background: linear-gradient(90deg, #46ff03, #00fbff);
+  margin: 20px 0,;
+   width: 100%;
+}
+
+/* third project */
+.expence {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(90deg, #4a16f4, #fafafa); /* Gradient for the text */
+  -webkit-background-clip: text; /* Clips the gradient to the text */
+  -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+  letter-spacing: 2px;
+  margin: 20px 0;
+  padding: 10px;
+}
+.details-section2 {
+  width: 100%; /* Reduced width to 70% of the container */
+  height: auto;
+  flex: 1;
+  background: linear-gradient(280deg,   #3226b5, #420d59);
+  padding: 15px; /* Adjusted padding for smaller content */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;/* Animation for smooth entry */
+}
